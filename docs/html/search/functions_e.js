@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['s_5frequest_0',['s_request',['../dc/dbd/structs__request.html#a057308bd1c73ef0db1ff0cc03563cd30',1,'s_request']]],
+  ['savefilehandler_1',['savefilehandler',['../df/d93/utils_8hpp.html#acd7261f597a22e80f75e42f9b830a18a',1,'saveFileHandler(t_request &amp;request, Server &amp;server):&#160;utils_response.cpp'],['../de/db3/utils__response_8cpp.html#acd7261f597a22e80f75e42f9b830a18a',1,'saveFileHandler(t_request &amp;request, Server &amp;server):&#160;utils_response.cpp']]],
+  ['savefileindatabase_2',['savefileindatabase',['../df/d93/utils_8hpp.html#a6a2c3249c047c5f65567961849bbf2f1',1,'saveFileInDatabase(std::string filename, std::string path, const t_multi_part &amp;part):&#160;utils_response.cpp'],['../de/db3/utils__response_8cpp.html#a6a2c3249c047c5f65567961849bbf2f1',1,'saveFileInDatabase(std::string filename, std::string path, const t_multi_part &amp;part):&#160;utils_response.cpp']]],
+  ['senderrorpage_3',['sendErrorPage',['../d4/d7d/classResponseMessage.html#affab71a3c7292a5e17448223782e7ed0',1,'ResponseMessage']]],
+  ['senderrorresponse_4',['sendErrorResponse',['../d4/d7d/classResponseMessage.html#aca53263f4e8dafb0d42cfe53f5409d6d',1,'ResponseMessage']]],
+  ['sendresponse_5',['sendresponse',['../d5/db0/response_8cpp.html#ae8e721f9f5ac72dee5a8838a2a11585a',1,'sendResponse(std::map&lt; int, std::string &gt; &amp;_write_buffer, int client_fd, EpollHandler &amp;epollHandler):&#160;response.cpp'],['../df/dc1/Response_8hpp.html#aa036e58d55b2636f08dc121103cb9ad3',1,'sendResponse(std::map&lt; int, std::string &gt; &amp;_write_buffer, int current_fd, EpollHandler &amp;epollHandler):&#160;response.cpp']]],
+  ['sendtoclient_6',['sendToClient',['../d5/db0/response_8cpp.html#aeb3075c3da36f899961cc3c860d19835',1,'response.cpp']]],
+  ['sendtosocket_7',['sendToSocket',['../df/dc1/Response_8hpp.html#a699c1ee18d6a79a698456b4415dae1fd',1,'Response.hpp']]],
+  ['server_8',['server',['../db/d00/classServer.html#a90198a181284a374771225263746d1bb',1,'Server::Server(const Server &amp;src)'],['../db/d00/classServer.html#ad5ec9462b520e59f7ea831e157ee5e59',1,'Server::Server()']]],
+  ['setheaderresponse_9',['setheaderresponse',['../df/dc1/Response_8hpp.html#ac22d619746b3ecb1aa9d57ce6b9268db',1,'setHeaderResponse(t_request &amp;req, const int &amp;code, const std::string &amp;content, Server &amp;server):&#160;response.cpp'],['../d5/db0/response_8cpp.html#ac22d619746b3ecb1aa9d57ce6b9268db',1,'setHeaderResponse(t_request &amp;req, const int &amp;code, const std::string &amp;content, Server &amp;server):&#160;response.cpp']]],
+  ['sethtmlpage_10',['sethtmlpage',['../df/d93/utils_8hpp.html#a0d72d464f6fb5a0b24e538be82165be6',1,'setHTMLPage(std::string title, std::string msg, std::string url_bg):&#160;utils_response.cpp'],['../de/db3/utils__response_8cpp.html#a0d72d464f6fb5a0b24e538be82165be6',1,'setHTMLPage(std::string title, std::string msg, std::string url_bg):&#160;utils_response.cpp']]],
+  ['setresponse_11',['setResponse',['../df/dc1/Response_8hpp.html#a227f6f286c0f9559efbabc2dad6c4bb0',1,'Response.hpp']]],
+  ['setreturnvalue_12',['setReturnValue',['../da/d05/classLocation.html#a6ed18285ff612dc2fc45509de4b88699',1,'Location']]],
+  ['setrootlocation_13',['setRootLocation',['../da/d05/classLocation.html#a18e60fa28945c1cd74795a9b2d1799b4',1,'Location']]],
+  ['setterfunction_14',['setterfunction',['../da/d05/classLocation.html#aa1a75857d3f524c64415d4854a690d88',1,'Location::setterFunction()'],['../db/d00/classServer.html#a4c194826e78394548d8c27ca243f239a',1,'Server::setterFunction()']]],
+  ['socket_15',['socket',['../d4/d33/classSocket.html#ad12f685dabc6de0d6383b9369b4ba645',1,'Socket::Socket(const Socket &amp;src)'],['../d4/d33/classSocket.html#a7c3256c4fc6e2c603df73201049fae5a',1,'Socket::Socket()']]],
+  ['specificchecks_16',['specificchecks',['../db/d56/specific__checks_8cpp.html#a8b9974471e1c78db5c5892220796e06f',1,'specificChecks(t_request &amp;req, Server &amp;server):&#160;specific_checks.cpp'],['../d6/d6f/request_8hpp.html#a8b9974471e1c78db5c5892220796e06f',1,'specificChecks(t_request &amp;req, Server &amp;server):&#160;specific_checks.cpp']]],
+  ['startserversocket_17',['startServerSocket',['../d4/d33/classSocket.html#aa58ec42ee1d12af91da8221ea1d5ab70',1,'Socket']]]
+];

@@ -1,0 +1,12 @@
+PROJECT_NAME           = "Shrerver - simple http server"
+OUTPUT_DIRECTORY       = docs      # place all generated files under ./docs
+CREATE_SUBDIRS         = YES       # put HTML, LaTeX, etc in subfolders
+INPUT                  = srcs includes        # where your .cpp/.hpp lives
+RECURSIVE              = YES       # descend into subdirectories
+FILE_PATTERNS          = *.cpp *.hpp *.c *.h
+EXTRACT_ALL            = YES       # document everything, even without @brief
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO        # disable LaTeX if you don’t need PDFs
+HAVE_DOT               = YES       # enable Graphviz diagrams
+DOT_IMAGE_FORMAT       = svg
+

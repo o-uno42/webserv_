@@ -1,0 +1,51 @@
+<map id="includes/Socket.hpp" name="includes/Socket.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1283,5,1434,31"/>
+<area shape="rect" id="Node000002" href="$dd/d60/EpollHandler_8hpp.html" title=" " alt="" coords="1263,79,1454,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1361,44,1361,79,1356,79,1356,44"/>
+<area shape="rect" id="Node000003" href="$d0/dcf/Everything_8hpp.html" title=" " alt="" coords="1204,225,1383,251"/>
+<area shape="poly" id="edge26_Node000001_Node000003" title=" " alt="" coords="1317,39,1282,57,1245,82,1212,114,1189,153,1186,165,1189,176,1201,192,1217,205,1253,223,1251,228,1214,209,1198,196,1184,179,1180,165,1184,151,1208,111,1241,78,1279,52,1315,34"/>
+<area shape="rect" id="Node000020" href="$df/d93/utils_8hpp.html" title=" " alt="" coords="1619,152,1755,177"/>
+<area shape="poly" id="edge27_Node000001_Node000020" title=" " alt="" coords="1399,34,1662,149,1660,154,1396,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1260,111,1225,128,1198,154,1194,164,1194,174,1209,193,1234,210,1262,223,1260,228,1231,214,1205,197,1189,176,1188,163,1194,150,1222,123,1258,106"/>
+<area shape="rect" id="Node000018" href="$df/dc1/Response_8hpp.html" title=" " alt="" coords="1208,152,1379,177"/>
+<area shape="poly" id="edge18_Node000002_Node000018" title=" " alt="" coords="1341,116,1306,154,1302,150,1337,113"/>
+<area shape="rect" id="Node000019" href="$d4/de3/serverSocket_8hpp.html" title=" " alt="" coords="1403,152,1595,177"/>
+<area shape="poly" id="edge20_Node000002_Node000019" title=" " alt="" coords="1395,108,1477,149,1475,154,1392,113"/>
+<area shape="poly" id="edge22_Node000002_Node000020" title=" " alt="" coords="1425,104,1634,149,1633,154,1424,109"/>
+<area shape="rect" id="Node000004" href="$de/dfd/socketHandler_8hpp.html" title=" " alt="" coords="5,306,205,331"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1191,244,760,259,484,276,206,301,155,309,154,303,205,296,484,271,760,254,1190,238"/>
+<area shape="rect" id="Node000005" href="$df/d0a/main_8cpp.html" title=" " alt="" coords="229,306,341,331"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="1190,242,1028,244,820,253,587,271,469,284,354,301,322,309,321,303,353,296,468,279,586,266,819,248,1028,239,1190,236"/>
+<area shape="rect" id="Node000006" href="$d8/d4a/request__cgi_8cpp.html" title=" " alt="" coords="365,299,520,339"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="1191,246,894,263,713,279,532,301,520,303,520,298,532,296,713,274,894,258,1190,240"/>
+<area shape="rect" id="Node000007" href="$d5/db0/response_8cpp.html" title=" " alt="" coords="545,306,746,331"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="1191,252,990,273,759,301,711,309,710,303,758,296,990,268,1190,246"/>
+<area shape="rect" id="Node000008" href="$d3/dfe/serverSocket_8cpp.html" title=" " alt="" coords="771,306,933,331"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="1210,255,946,301,908,309,907,303,945,296,1210,250"/>
+<area shape="rect" id="Node000009" href="$d1/dd8/epollHandler_8cpp.html" title=" " alt="" coords="958,306,1165,331"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="1247,258,1096,309,1094,303,1246,253"/>
+<area shape="rect" id="Node000010" href="$dc/d79/socket_2serverSocket_8cpp.html" title=" " alt="" coords="1189,306,1398,331"/>
+<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="1296,264,1296,306,1291,306,1291,264"/>
+<area shape="rect" id="Node000011" href="$d8/d81/socket_8cpp.html" title=" " alt="" coords="1422,306,1589,331"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="1338,253,1475,303,1474,308,1336,258"/>
+<area shape="rect" id="Node000012" href="$d0/d12/socketHandler_8cpp.html" title=" " alt="" coords="1613,306,1830,331"/>
+<area shape="poly" id="edge12_Node000003_Node000012" title=" " alt="" coords="1369,250,1660,303,1659,309,1368,256"/>
+<area shape="rect" id="Node000013" href="$de/d06/utils_8cpp.html" title=" " alt="" coords="1855,306,1993,331"/>
+<area shape="poly" id="edge13_Node000003_Node000013" title=" " alt="" coords="1396,244,1603,264,1843,296,1879,303,1878,309,1842,301,1603,269,1396,249"/>
+<area shape="rect" id="Node000014" href="$d4/d88/utils__free_8cpp.html" title=" " alt="" coords="2018,306,2190,331"/>
+<area shape="poly" id="edge14_Node000003_Node000014" title=" " alt="" coords="1397,244,1721,269,2006,296,2050,303,2049,309,2005,301,1721,274,1396,249"/>
+<area shape="rect" id="Node000015" href="$d8/d83/utils__methods_8cpp.html" title=" " alt="" coords="2215,306,2417,331"/>
+<area shape="poly" id="edge15_Node000003_Node000015" title=" " alt="" coords="1396,243,2203,296,2254,303,2253,309,2202,301,1396,248"/>
+<area shape="rect" id="Node000016" href="$d2/d3b/utils__prints_8cpp.html" title=" " alt="" coords="2442,306,2625,331"/>
+<area shape="poly" id="edge16_Node000003_Node000016" title=" " alt="" coords="1396,243,1481,248,1748,259,1956,263,2164,272,2430,296,2478,303,2477,309,2429,301,2163,277,1956,268,1748,264,1481,253,1396,248"/>
+<area shape="rect" id="Node000017" href="$de/db3/utils__response_8cpp.html" title=" " alt="" coords="2649,306,2855,331"/>
+<area shape="poly" id="edge17_Node000003_Node000017" title=" " alt="" coords="1396,243,1481,248,1807,259,2060,262,2313,270,2462,280,2638,296,2691,303,2691,309,2637,301,2462,285,2313,276,2060,268,1807,265,1481,253,1396,249"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="191,301,229,296,507,271,783,254,1204,238,1204,244,783,259,508,276,230,301,191,306"/>
+<area shape="poly" id="edge19_Node000018_Node000003" title=" " alt="" coords="1296,191,1296,225,1291,225,1291,191"/>
+<area shape="poly" id="edge21_Node000019_Node000003" title=" " alt="" coords="1454,184,1327,228,1326,223,1452,179"/>
+<area shape="poly" id="edge23_Node000020_Node000003" title=" " alt="" coords="1611,182,1357,228,1357,223,1610,177"/>
+<area shape="rect" id="Node000021" href="$d4/dbc/autoIndex_8cpp.html" title=" " alt="" coords="1493,225,1707,251"/>
+<area shape="poly" id="edge24_Node000020_Node000021" title=" " alt="" coords="1664,188,1616,227,1612,223,1661,184"/>
+<area shape="rect" id="Node000022" href="$d3/df5/path__check_8cpp.html" title=" " alt="" coords="1731,225,1938,251"/>
+<area shape="poly" id="edge25_Node000020_Node000022" title=" " alt="" coords="1724,181,1812,223,1809,228,1721,186"/>
+</map>

@@ -1,0 +1,4 @@
+
+STRESS TESTS
+siege -b http://localhost:3001
+siege -b -c50 -r10 http://localhost:3001

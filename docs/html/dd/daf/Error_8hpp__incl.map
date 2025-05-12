@@ -1,0 +1,15 @@
+<map id="includes/Error.hpp" name="includes/Error.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="236,5,375,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,85,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,33,100,78,98,73,263,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="110,79,197,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,33,191,75,189,70,280,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="221,79,296,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="300,32,276,69,272,66,295,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="321,79,386,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="315,30,340,66,336,69,311,33"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="410,79,473,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="328,28,408,70,406,75,326,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="497,79,556,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="342,28,485,74,483,79,340,33"/>
+</map>

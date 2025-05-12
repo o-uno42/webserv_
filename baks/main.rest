@@ -1,0 +1,232 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tjuvan <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/29 12:56:38 by tjuvan            #+#    #+#             */
+/*   Updated: 2025/02/05 21:07:05 by tjuvan           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../includes/main.hpp"
+
+// 🔹 Function to print all request struct fields
+void printRequestStruct(const t_request &req)
+{
+    std::cout << "📌 Parsed Request Data:\n";
+    std::cout << "Method: " << (req.method.empty() ? "[Not Provided]" : req.method) << "\n";
+    std::cout << "Path: " << (req.path.empty() ? "[Not Provided]" : req.path) << "\n";
+    std::cout << "Protocol: " << (req.protocol.empty() ? "[Not Provided]" : req.protocol) << "\n";
+    std::cout << "Host: " << (req.host.empty() ? "[Not Provided]" : req.host) << "\n";
+    std::cout << "User-Agent: " << (req.user_agent.empty() ? "[Not Provided]" : req.user_agent) << "\n";
+    std::cout << "Accept: " << (req.accept.empty() ? "[Not Provided]" : req.accept) << "\n";
+    std::cout << "Accept-Language: " << (req.accept_language.empty() ? "[Not Provided]" : req.accept_language) << "\n";
+    std::cout << "Connection: " << (req.connection.empty() ? "[Not Provided]" : req.connection) << "\n";
+    std::cout << "Content-Type: " << (req.content_type.empty() ? "[Not Provided]" : req.content_type) << "\n";
+if (!req.content_options.empty()) {
+    std::cout << "Content-Option: " << (req.content_options[0].empty() ? "[Not Provided]" : req.content_options[0]) << "\n";
+} else {
+    std::cout << "Content-Option: [Not Provided]\n";
+}
+    std::cout << "Body: " << (req.body.empty() ? "[Not Provided]" : req.body) << "\n";
+
+	// print encoded params
+	std::cout << "encoded params: ";
+	if (req.encoded_params.empty()) {
+		std::cout << "[empty]";
+	} else {
+		for (size_t j = 0; j < req.encoded_params.size(); ++j)
+		{
+			std::cout << req.encoded_params[j];
+			if (j + 1 < req.encoded_params.size())
+				std::cout << ", ";
+		}
+		std::cout << std::endl;
+	}
+    std::cout << "line_break: " << req.line_break << "\n";
+}
+
+void printMultiPart(const t_request &req)
+{
+    std::cout << "=== Multipart Data ===" << std::endl;
+    
+    if (req.multi_part.empty()) {
+        std::cout << "[No multipart data]" << std::endl;
+        return;
+    }
+
+    // Iterate over each multipart element
+    for (size_t i = 0; i < req.multi_part.size(); ++i)
+    {
+        const t_multi_part &part = req.multi_part[i];
+        std::cout << "--- Part " << i + 1 << " ---" << std::endl;
+
+        
+        // Print disposition_params
+        std::cout << "Disposition Parameters: ";
+        if (part.disposition_params.empty()) {
+            std::cout << "[empty]";
+        } else {
+            for (size_t j = 0; j < part.disposition_params.size(); ++j)
+            {
+                std::cout << part.disposition_params[j];
+                if (j + 1 < part.disposition_params.size())
+                    std::cout << ", ";
+            }
+        }
+        std::cout << std::endl;
+        
+        // Print content_type
+        std::cout << "Content-Type: " 
+                  << (part.content_type.empty() ? "[empty]" : part.content_type)
+                  << std::endl;
+        
+        // Print body
+        std::cout << "Body: " 
+                  << (part.body.empty() ? "[empty]" : part.body)
+				  << std::endl;
+
+    }
+}
+
+
+int main()
+{
+    // ✅ Valid HTTP request
+    std::string valid_request =
+        "GET /index.html HTTP/1.1\r\n"
+        "Host: example.com\r\n"
+        "User-Agent: TestClient/1.0\r\n"
+        "Accept: text/html\r\n"
+        "Connection: keep-alive\r\n"
+        "\r\n";  // Empty line separates headers from body
+
+    // ❌ Invalid HTTP request (missing method)
+    std::string invalid_request =
+        "/index.html HTTP/1.1\r\n"
+        "Host: example.com\r\n"
+        "User-Agent: TestClient/1.0\r\n"
+        "Accept: text/html\r\n"
+        "Connection: keep-alive\r\n"
+        "\r\n";
+
+    // ✅ POST request with a body (JSON data)
+    std::string post_request =
+        "POST /submit HTTP/1.1\r\n"
+        "Host: example.com\r\n"
+        "User-Agent: TestClient/1.0\r\n"
+        "Accept: application/json\r\n"
+        "Content-Type: application/json; charset=UTF-8\r\n"
+        "Content-Length: 42\r\n"
+        "Connection: keep-alive\r\n"
+        "\r\n"
+        /* "{ \"username\": \"test_user\", \"password\": \"1234\" }";  // Body starts after the empty line */
+		"[\n"
+		"    { \"username\": \"test_user1\", \"password\": \"1234\" },\n"
+		"    { \"username\": \"test_user2\", \"password\": \"abcd\" },\n"
+		"    { \"username\": \"test_user3\", \"password\": \"5678\" }\n"
+		"]";
+
+	std::string post_request_text_plain =
+		"POST /submit HTTP/1.1\r\n"
+		"Host: example.com\r\n"
+		"User-Agent: TestClient/1.0\r\n"
+		"Accept: text/plain\r\n"
+		"Content-Type: text/plain; charset=UTF-8\r\n"
+		"Content-Length: 13\r\n"
+		"Connection: keep-alive\r\n"
+		"\r\n"
+		"Hello, world!";
+
+	// ✅ Multipart/form-data request with text field and file
+	std::string multipart_request =
+		"POST /upload HTTP/1.1\r\n"
+		"Host: example.com\r\n"
+		"User-Agent: TestClient/1.0\r\n"
+		"Accept: */*\r\n"
+		"Content-Type: multipart/form-data; boundary=xyz987\r\n"
+		"Content-Length: 256\r\n"
+		"Connection: keep-alive\r\n"
+		"\r\n"
+		"--xyz987\r\n"
+		"Content-Disposition: form-data; name=\"username\"\r\n"
+		"Content-Type: text/plain\r\n"
+		"\r\n"
+		"JohnDoe\r\n"
+		"--xyz987\r\n"
+		"Content-Disposition: form-data; name=\"profileImage\"; filename=\"avatar.jpg\"\r\n"
+		"Content-Type: image/jpeg\r\n"
+		"\r\n"
+		"<binary file data>\r\n"
+		"--xyz987\r\n--";
+
+	//urlencoded
+	std::string urlencoded_request =
+		"POST /upload HTTP/1.1\r\n"
+		"Host: example.com\r\n"
+		"User-Agent: TestClient/1.0\r\n"
+		"Accept: */*\r\n"
+		"Content-Type: application/x-www-form-urlencoded\r\n"
+		"Content-Length: 24\r\n"
+		"Connection: keep-alive\r\n"
+		"\r\n"
+		"username=JohnDoe&profileImage=avatar.jpg";
+
+
+
+    // 🌟 Test valid request
+    std::cout << "=== Testing Valid Request ===\n";
+    t_request req_valid;
+    int status = parseRequest(valid_request, req_valid);
+    /* if (status == 100) */
+        printRequestStruct(req_valid);
+    /* else */
+    /*     std::cout << "Parsing failed with error code: " << status << "\n"; */
+		std::cout << "\n" << status << std::endl;
+
+    std::cout << "\n";
+
+    // 🌟 Test invalid request
+    std::cout << "=== Testing Invalid Request ===\n";
+    t_request req_invalid;
+    status = parseRequest(invalid_request, req_invalid);
+    /* if (status == 100) */
+        printRequestStruct(req_invalid);
+    /* else */
+    /*     std::cout << "Parsing failed with error code: " << status << "\n"; */
+		std::cout << "\n" << status << std::endl;
+
+    // 🌟 Test POST request with a body
+    std::cout << "=== Testing POST Request with Body ===\n";
+    t_request req_post;
+    status = parseRequest(post_request, req_post);
+    printRequestStruct(req_post);
+    std::cout << "\n" << status << std::endl;
+
+	// 🌟 Test POST request with text/plain content type
+	std::cout << "=== Testing POST Request with text/plain Content-Type ===\n";
+	t_request req_post_text_plain;
+	status = parseRequest(post_request_text_plain, req_post_text_plain);
+	printRequestStruct(req_post_text_plain);
+	std::cout << "\n" << status << std::endl;
+
+	// 🌟 Test multipart request
+    std::cout << "=== Testing Multipart/Form-Data Request ===\n";
+    t_request req_multipart;
+    status = parseRequest(multipart_request, req_multipart);
+    printRequestStruct(req_multipart);
+	printMultiPart(req_multipart);
+    std::cout << "\n" << status << std::endl;
+
+	// 🌟 Test application/x-www-form-urlencoded request
+	std::cout << "=== Testing x-www-form-urlencoded Request ===\n";
+	t_request req_urlencoded;
+	status = parseRequest(urlencoded_request, req_urlencoded);
+	printRequestStruct(req_urlencoded);
+	std::cout << "\n" << status << std::endl;
+
+
+    return 0;
+}

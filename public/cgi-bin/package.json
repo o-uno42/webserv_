@@ -1,0 +1,16 @@
+{
+  "name": "cgi-bin",
+  "version": "1.0.0",
+  "main": "cgi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "figlet": "^1.8.0"
+  }
+}

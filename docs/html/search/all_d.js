@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['readfilecontents_0',['readfilecontents',['../df/d93/utils_8hpp.html#aeb26de8898befbea1834f0d70d27954e',1,'readFileContents(std::ifstream &amp;file):&#160;utils.cpp'],['../de/d06/utils_8cpp.html#aeb26de8898befbea1834f0d70d27954e',1,'readFileContents(std::ifstream &amp;file):&#160;utils.cpp']]],
+  ['readindex_1',['readIndex',['../d4/dbd/indexCheck_8cpp.html#a471c1c75f18024681480527aff004e2d',1,'indexCheck.cpp']]],
+  ['red_2',['red',['../df/d95/colors_8hpp.html#a8d23feea868a983c8c2b661e1e16972f',1,'RED:&#160;colors.hpp'],['../d0/d00/main_8hpp.html#a8d23feea868a983c8c2b661e1e16972f',1,'RED:&#160;main.hpp'],['../d2/d54/mmain_8hpp.html#a8d23feea868a983c8c2b661e1e16972f',1,'RED:&#160;mmain.hpp'],['../d7/ddd/Parser_8hpp.html#a8d23feea868a983c8c2b661e1e16972f',1,'RED:&#160;Parser.hpp']]],
+  ['redirectset_3',['redirectSet',['../da/d05/classLocation.html#a17643403b21386102dd0e6893054d537',1,'Location']]],
+  ['registrationhandler_4',['registrationhandler',['../df/d93/utils_8hpp.html#ae46e4796ca2e005213b7b529c9955335',1,'registrationHandler(t_request &amp;request, Server &amp;server, std::string file_path):&#160;utils_response.cpp'],['../de/db3/utils__response_8cpp.html#ae46e4796ca2e005213b7b529c9955335',1,'registrationHandler(t_request &amp;request, Server &amp;server, std::string file_path):&#160;utils_response.cpp']]],
+  ['removesocketfromepoll_5',['removeSocketFromEpoll',['../d5/d12/classEpollHandler.html#a2d7f5d4a7964fc9c089336a80ef1d52e',1,'EpollHandler']]],
+  ['request_2ehpp_6',['request.hpp',['../d6/d6f/request_8hpp.html',1,'']]],
+  ['request_5fbak_2ehpp_7',['request_bak.hpp',['../d3/d34/request__bak_8hpp.html',1,'']]],
+  ['request_5fcgi_2ecpp_8',['request_cgi.cpp',['../d8/d4a/request__cgi_8cpp.html',1,'']]],
+  ['request_5fhpp_9',['REQUEST_HPP',['../d3/d34/request__bak_8hpp.html#a4b88c68783a15539fb74f9901e99e397',1,'request_bak.hpp']]],
+  ['request_5fpath_5fcheck_10',['request_path_check',['../d3/df5/path__check_8cpp.html#a5cb0bf9aca803dee600d88a0f35aaf59',1,'request_path_check(t_request &amp;req, Server &amp;server):&#160;path_check.cpp'],['../d6/d6f/request_8hpp.html#a5cb0bf9aca803dee600d88a0f35aaf59',1,'request_path_check(t_request &amp;req, Server &amp;server):&#160;path_check.cpp']]],
+  ['reset_11',['reset',['../d7/ddd/Parser_8hpp.html#ab702106cf3b3e96750b6845ded4e0299',1,'RESET:&#160;Parser.hpp'],['../df/d95/colors_8hpp.html#ab702106cf3b3e96750b6845ded4e0299',1,'RESET:&#160;colors.hpp'],['../d0/d00/main_8hpp.html#ab702106cf3b3e96750b6845ded4e0299',1,'RESET:&#160;main.hpp'],['../d2/d54/mmain_8hpp.html#ab702106cf3b3e96750b6845ded4e0299',1,'RESET:&#160;mmain.hpp']]],
+  ['response_2ecpp_12',['response.cpp',['../d5/db0/response_8cpp.html',1,'']]],
+  ['response_2ehpp_13',['Response.hpp',['../df/dc1/Response_8hpp.html',1,'']]],
+  ['response_5fcode_14',['response_code',['../dc/dbd/structs__request.html#ad701468a74a3ce019cec1e434611562e',1,'s_request::response_code'],['../df/d82/structs__cgi.html#aea30d866353e7904dfd879656c56d345',1,'s_cgi::response_code']]],
+  ['responsemessage_15',['ResponseMessage',['../d4/d7d/classResponseMessage.html',1,'']]],
+  ['responsemessage_2ecpp_16',['ResponseMessage.cpp',['../dc/d95/ResponseMessage_8cpp.html',1,'']]],
+  ['responsemessage_2ehpp_17',['ResponseMessage.hpp',['../d7/d0e/ResponseMessage_8hpp.html',1,'']]],
+  ['responsemessagemappings_2ecpp_18',['ResponseMessageMappings.cpp',['../da/d72/ResponseMessageMappings_8cpp.html',1,'']]],
+  ['responsemessageutils_2ecpp_19',['ResponseMessageUtils.cpp',['../d9/da2/ResponseMessageUtils_8cpp.html',1,'']]],
+  ['return_5fcode_20',['return_code',['../dc/dbd/structs__request.html#a42071eae9eeb49e678dfee6b3f34f4d8',1,'s_request']]],
+  ['return_5fstring_21',['return_string',['../dc/dbd/structs__request.html#a7545953d276286da15b5709be1fe4320',1,'s_request']]],
+  ['reusesocketaddr_22',['reuseSocketAddr',['../d4/d33/classSocket.html#a639851fcd5a4830313fffa903f2e368b',1,'Socket']]],
+  ['runningerror_23',['runningError',['../d9/dd6/classError.html#ab94ccef519e4fae0e0df07d9a5f7ae80',1,'Error']]]
+];

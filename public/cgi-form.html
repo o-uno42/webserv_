@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CGI Test Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            background-image: url('pics/farquaad.jpg');
+            margin: 0 auto;
+            padding: 20px;
+			color: Maroon;
+        }
+        form {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+			background-color: LightSlateGrey;
+			opacity: 0.8;
+		}
+		h1 {
+			text-align: center;
+			color: maroon;
+		}
+		h2 {
+			color: maroon;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: maroon;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+	 <script>
+		 function checkAuth() {
+			 window.location.href = "/cgi-bin/cookie_auth.py";
+		 }
+	 </script>
+</head>
+<body>
+    <h1>CGI Test Form</h1>
+    
+    <h2>GET Form - Python</h2>
+    <form action="/cgi-bin/save_name.py" method="GET">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+        
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" placeholder="Your surname">
+        
+        <button type="submit">Submit GET</button>
+    </form>
+	<h2>POST Form - Php</h2>
+	<form action="/cgi-bin/cgi.php" method="POST">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" placeholder="Your username">
+		
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="Your password">
+		
+		<button type="submit">Submit POST</button>
+	</form>
+	<button onclick="checkAuth()">Check Login</button>
+	<h2>Figlify - Node.js CGI</h2>
+    <form action="/cgi-bin/cgi.js" method="POST">
+        <label for="data">Text to Save:</label>
+        <input type="text" id="data" name="data" placeholder="Enter text here">
+        <button type="submit">Submit POST</button>
+    </form>
+    <!-- <form action="/database" method="POST" enctype="multipart/form-data">
+        <input type="file" name="myfile">
+        <button type="submit">Submit POST</button>
+    </form> -->
+</body>
+</html>
+
+<!-- <script>
+    function setMethod(method) {
+        const form = document.getElementById('myForm');
+        if (method === 'DELETE') {
+            form.method = 'POST'; // Forms do not support DELETE directly
+            form.action = '/database'; // Change the endpoint for DELETE
+            const hiddenMethod = document.createElement('input');
+            hiddenMethod.type = 'hidden';
+            hiddenMethod.name = '_method';
+            hiddenMethod.value = 'DELETE';
+            form.appendChild(hiddenMethod);
+        } else {
+            form.method = 'POST';
+            form.action = '/database';
+        }
+    }
+</script> -->
+
