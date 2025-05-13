@@ -69,7 +69,7 @@ std::string cgiSetHeaderResponse(t_request &req, const int &code, const std::str
 std::string setHeaderResponse(t_request &req, const int &code, const std::string &content, Server &server) {
 
     (void)server;
-    int correct_code;
+    int correct_code = 405;
     if (code)
         correct_code = code;
     else
@@ -187,6 +187,9 @@ std::string setHeaderResponse(t_request &req, const int &code, const std::string
         std::string debug = deleteHandler(request, server, file_path);
         // LOG_YELLOW(debug);
         return debug;
+    }
+    else{
+        return ResponseMessage::sendErrorResponse(501, server); //method not allowed
     }
     return ResponseMessage::sendErrorResponse(405, server); //method not allowed
 }

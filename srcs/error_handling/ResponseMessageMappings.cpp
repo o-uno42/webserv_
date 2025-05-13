@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   RequestErrorMappings.cpp                           :+:      :+:    :+:   */
+/*   ResponseMessageMappings.cpp                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tjuvan <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 13:55:01 by tjuvan            #+#    #+#             */
-/*   Updated: 2025/01/30 16:11:08 by tjuvan           ###   ########.fr       */
+/*   Updated: 2025/05/12 20:14:34 by thiew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,12 @@ std::map<int, std::string>	ResponseMessage::initErrorsShort()
     
     // 5xx Server Errors
     short_message[500] = "Internal Server Error";
+    short_message[501] = "Not Implemented";
+    short_message[502] = "Bad Gateway";
+    short_message[503] = "Service Unavailable";
+    short_message[504] = "Gateway Timeout";
+    short_message[505] = "HTTP Version Not Supported";
+    short_message[511] = "Network Authentication Required";
 
     return short_message;
 }
@@ -95,6 +101,13 @@ std::map<int, std::string>	ResponseMessage::initErrorsLong()
     long_message[414] = "The URI requested by the client is longer than the server is willing to interpret.";
     long_message[415] = "The media format of the requested data is not supported by the server.";
     long_message[429] = "The user has sent too many requests in a given amount of time.";
+    long_message[500] = "The server encountered an unexpected condition that prevented it from fulfilling the request.";
+    long_message[501] = "The server does not support the functionality required to fulfill the request.";
+    long_message[502] = "The server, while acting as a gateway or proxy, received an invalid response from the upstream server.";
+    long_message[503] = "The server is currently unable to handle the request due to temporary overloading or maintenance.";
+    long_message[504] = "The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server.";
+    long_message[505] = "The server does not support the HTTP protocol version used in the request.";
+    long_message[511] = "Network authentication is required to access this resource.";
 
     return long_message;
 }

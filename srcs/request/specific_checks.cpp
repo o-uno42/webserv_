@@ -6,7 +6,7 @@
 /*   By: tjuvan <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 17:22:47 by tjuvan            #+#    #+#             */
-/*   Updated: 2025/04/06 18:47:36 by thiew            ###   ########.fr       */
+/*   Updated: 2025/05/12 21:34:04 by thiew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,12 @@ int	allowedMethodsRequest(t_request &req, Server &server)
 	default_methods.push_back("DELETE");
 
 	std::vector<std::string> allowed_methods;
+	std::cout << req.location.getRootLocation()<< std::endl;
 	if (req.location.getLocationPath() != "undefined")
+	{
 		allowed_methods = req.location.getAllowedMethods();
+		std::cout << "size " << allowed_methods.size() << std::endl;
+	}
 	else
 		allowed_methods = server.getAllowedMethods();
 	if (allowed_methods.empty())

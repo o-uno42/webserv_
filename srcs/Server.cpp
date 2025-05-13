@@ -6,7 +6,7 @@
 /*   By: amireid <amireid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 20:48:14 by aeid              #+#    #+#             */
-/*   Updated: 2025/04/22 22:42:09 by amireid          ###   ########.fr       */
+/*   Updated: 2025/05/12 21:32:17 by thiew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -275,10 +275,10 @@ std::vector<std::string> Server::parseAllowedMethods(std::string str) {
             tmp += str_final[i];
             i++;
         }
-        if (tmp == "GET" || tmp == "POST" || tmp == "DELETE")
-            allowed_methods.push_back(tmp);
-        else
-            allowed_methods.clear();
+        // if (tmp == "GET" || tmp == "POST" || tmp == "DELETE")
+		allowed_methods.push_back(tmp);
+        // else
+        //     allowed_methods.clear();
     }
     return allowed_methods;
 }

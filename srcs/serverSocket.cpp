@@ -66,6 +66,7 @@ int    Socket::startServerSocket(std::vector<Server> servers)
 	resStruct.location = std::vector<Location>();
 
 	signal(SIGINT, handleSignal);
+	initEmptyRequest(request, -1);
 
 	if(!checkDoublePort(servers)){return 1;};
 

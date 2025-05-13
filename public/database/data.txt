@@ -24,3 +24,4 @@ name=ciao
 email=nn@j
 name=ciao
 email=nn@j
+name=c&email=petre.giorgi71%40gmail.com

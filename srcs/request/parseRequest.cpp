@@ -6,7 +6,7 @@
 /*   By: tjuvan <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 18:12:33 by tjuvan            #+#    #+#             */
-/*   Updated: 2025/05/09 16:10:45 by thiew            ###   ########.fr       */
+/*   Updated: 2025/05/12 20:32:59 by thiew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ int	parseRequest(std::string request, t_request &parsed_req, Server &obj)
 
 	parsed_req.line_break = 0;
 	parsed_req.content_length = 0;
+	parsed_req.return_code = -1;
 	getline(oss, buff);
 	err_code = parseRequestLine(buff, parsed_req);
 	if (err_code > 100)
@@ -117,7 +118,7 @@ int	parseRequestLine(std::string &request_line, t_request &parsed_req)
 			break ;
 		}
 		if (*it == "DELETE" && buff != *it)
-			return (400);
+			return (501);
 	}
 	if (oss.bad())
 		return (500);
